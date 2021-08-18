@@ -18,6 +18,13 @@
             display: none; 
         }
 
+        #titles{
+            display:flex;
+            justify-content: center;
+            padding:10px;
+            width:100%;
+        }
+
         .fa {
             padding: 0px;
             font-size: 15px;
@@ -26,7 +33,6 @@
             text-decoration: none;
             margin: 5px 2px;
             justify-content: center;
-            text-align: center;
         }   
 
         .fa:hover {
@@ -123,18 +129,8 @@
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
         }
-        #highlights{
-            padding:10px;
-            background-color:rgb(53, 52, 52);
-            background-image: url("items/piechart.png");
-            background-size: 90%;
-            background-position: center;
-            background-repeat: no-repeat;
-            height:60vh;
-        }
         #projects{
             background-image:linear-gradient(rgb(77, 76, 76),gray);
-            height:100vh;
             width:100%;
             padding-top:60px;
         }
@@ -219,7 +215,10 @@
         </div>
         </div>
         <div id="academics"class="container-fluid">
-            <h1>Engineering Physics Co-op (B.Eng.)</h1>
+            <div id="titles">
+                <h1>Academics</h1>
+            </div>
+            <p style="font-size: 20px;font-style:italic">Engineering Physics Co-op (B.Eng.)</p>
             <p>"In Engineering Physics, we create advanced materials, devices and systems based on our 
                 fundamental understanding of physics. Our faculty and students are pushing the envelope 
                 of new technologies to solve the grand challenges of the future such as energy supply, 
@@ -510,6 +509,9 @@
             </div>
         </div>
         <div id="projects"class="container-fluid">
+            <div id="titles">
+                <h1>Projects</h1>
+            </div>
             <div class="row">
                 <div class="col-md-4">
                     <div id="projcard" class="card">
