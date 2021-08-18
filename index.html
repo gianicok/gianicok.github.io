@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Kosta Gianicos</title>
+    <title>kgengineer</title>
     <style>
         body {
+            /*font-family: Times;*/
             -ms-overflow-style: none;  
-            scrollbar-width: none; 
+            scrollbar-width: none;
         }
         body::-webkit-scrollbar { 
             display: none; 
@@ -68,6 +69,15 @@
             margin-right: 5px;
         }
 
+        #contacts{
+            display:flex;
+            justify-content: center;
+        }
+
+        #contacts a{
+            margin-right: 5px;
+        }
+
         #about h1{
             color:white;
             padding-top:90px;
@@ -102,7 +112,7 @@
             overflow:scroll; 
         }
         .list-group li{
-            background-color:rgb(53, 52, 52);
+            background-color:rgb(33, 37, 41);
             color:white;
         }
         #courses::-webkit-scrollbar{
@@ -128,6 +138,21 @@
             width:100%;
             padding-top:60px;
         }
+        #projcard{
+            padding:3px;
+            margin:5px;
+            background-color: rgb(33, 37, 41);
+            color:white;
+        }
+        #projcard img{
+            padding:15px;
+            height:220px;
+        }
+
+        p.skill{
+            line-height: 0.1cm;
+        }
+
         #experience{
             background-image:linear-gradient(gray,white);
             height:100vh;
@@ -151,7 +176,6 @@
 <body>
     <nav id="navhead"class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Kosta Gianicos</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -189,7 +213,8 @@
             <div id="linkz">
                 <a href="https://www.linkedin.com/in/kostagianicos/" class="fa fa-linkedin" target="_blank"></a>
                 <a href="https://github.com/gianicok" class="fa fa-github" target="_blank"></a>
-                <a href="https://github.com/gianicok" class="fa fa-paper-plane" target="_blank"></a>
+                <a class="fa fa-paper-plane" target="_blank"></a>
+                <p>gianick@mcmaster.ca</p>
             </div>
         </div>
         </div>
@@ -203,20 +228,19 @@
             <p> Engineering Physics means a lot to me. As a first year engineering student I found that 
                 I had a wide variety of interests throughout my courses. I liked learning about semiconductors
                 in Materials Science, algorithms in Computer Science, the unintuitive physics in Electricity
-                and Magnetism, and several other areas of first year. Given that McMaster Engineering starts
-                you in a general path and requires you to specialize into an Engineering stream after, this
-                caused me some worry at first. Having done a highschool Co-Op in the department, I already had
-                some knowledge about Engineering Physics, the program that teaches areas of computation, circuit 
-                design, several areas of physics, and points out all the ways they synergize together. Given my
-                wide range of interest and the freedom given to customize our own degree, I chose Eng Phys. My 
-                current goals and aspirations are to further develop my knowledge of applied Quantum Mechanics
-                and combine it with my experience in computational methods in an interesting way. This could be
-                through analyis of nanotechnology like photovoltaics or nanowires, or even Quantum Computers.</p>
+                and Magnetism, and several other areas of first year. Having done a highschool Co-Op in the department 
+                I already had some knowledge about Engineering Physics. I knew it was the program that teaches areas of computation, 
+                circuit design, several areas of physics. The several different areas of study was the major reason I chose the program.
+                While it seemed daunting, I knew that to reach your maximum potential as an Engineer or Physicist, you must be able 
+                to have a solid framework of understanding across the board in all different fields. 
+                
+                My current goals and aspirations for my academic career are to specialize more into the field of Quantum Mechanics
+                and Nanotechnology. Nanotechnology has several different applications in Renewable Energy, Quantum Computers, Medicine and more.
+                I am excited for this upcoming year where I will really get the chance to immerse myself in the field at the ground level.</p>
                 <p style="text-align: center;">Seen below is a youtube video by 
                 <a href="https://www.eng.mcmaster.ca/engphys/people/faculty/matthew-minnick" target="_blank">
                     Dr. Minnick
-                </a> explaining Engineering Physics at McMaster more in depth, and a list of my courses I 
-                have taken/am enrolled in for the upcoming semester. (click to navigate years)
+                </a> explaining Engineering Physics more in depth, and a list of my courses (click/scroll to navigate years/courses)
             </p>
             <div class="container-fluid">
                 <div class="row">
@@ -226,13 +250,13 @@
                     <div class="col-sm-6">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                              <div class="carousel-item active">
+                              <!--<div class="carousel-item active">
                                 <div id="highlights">
                                     <h1>Degree Breakdown:</h1>
                                     <p>How my degree is split up into different fields (by course)</p>
                                 </div>
-                              </div>
-                              <div class="carousel-item">
+                              </div>-->
+                              <div class="carousel-item active">
                                 <ul id="courses"class="list-group">
                                     <li class="list-group-item">
                                         <h1>Third Year Courses: [2021/22]</h1>
@@ -486,27 +510,59 @@
             </div>
         </div>
         <div id="projects"class="container-fluid">
-            <h1>Projects</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="projcard" class="card">
+                        <img src="items/circuit.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 style="font-weight: bold">Sequential Logic Design</h5>
+                            <p class="card-text">Using JK Flip Flops and Logic Gates paired with a 7 segment display, I designed a circuit that loops through my 9-digit student number repeatedly.</p>
+                            <h5 style="font-weight: bold">Skills Learned:</h5>
+                            <p class="skill">- Physical Circuit Design</p>
+                            <p class="skill">- JK Flip Flops + Clock Signals</p>
+                            <p class="skill">- Computational Circuit Analysis/Design</p>
+                            <p class="skill">- Boolean Algebra</p>
+                            <p class="skill">- Engineering Report Writing</p>
+                            <p class="skill">- Video Documentation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="projcard" class="card">
+                        <img src="items/photovoltaic.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 style="font-weight: bold">Optimizing energy efficient solar cells
+                                with exterior material heat dissipation.</h5>
+                            <p class="card-text">Using a finite element simulation software (FlexPDE), Python, the laws of Heat Transfer, and some efficiency equations, I optimized the size of a photovoltaic cell in a solar panel to minimize average temperature of the photovoltaic cell and maximize energy output.</p>
+                            <h5 style="font-weight: bold">Skills Learned:</h5>
+                            <p class="skill">- Nanotech/Solar Cells/Thermodynamics Physics</p>
+                            <p class="skill">- Simulating Physics Through PDE's</p>
+                            <p class="skill">- Big Data Analysis with Python</p>
+                            <p class="skill">- Multi-Step Optimization</p>
+                            <p class="skill">- Physics Report Writing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="projcard" class="card">
+                        <img src="items/circuit.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 style="font-weight: bold">Sequential Logic Design</h5>
+                            <p class="card-text">Using JK Flip Flops and Logic Gates paired with a 7 segment display, I was able to have a circuit loop through my 9-digit student number repeatedly.</p>
+                            <h5 style="font-weight: bold">Skills Learned:</h5>
+                            <p class="skill">- Report Writing</p>
+                            <p class="skill">- JK Flip Flops + Clock Signals</p>
+                            <p class="skill">- Computational Circuit Analysis/Design</p>
+                            <p class="skill">- Boolean Algebra</p>
+                            <p class="skill">- Report Writing</p>
+                            <p class="skill">- Video Documentation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="experience"class="container-fluid">
             <h1>Experience</h1>
-            <div class="container-fluid">
-                <div class="row">
-                    <div id="resume"class="col-md-6">
-                        <object id="pdf"data="items/resume_kosta.pdf" type="application/pdf" width="90%" height="100%"> 
-                            <p>It appears you don't have a PDF plugin for this browser.
-                             No biggie... you can <a href="items/resume_kosta.pdf">click here to
-                            download the PDF file.</a></p>  
-                          </object>
-                    </div>
-                    <div id="experiencestuff"class="col-md-6">
-                        hi
-                    </div>
-                </div>
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
-            </div>
         </div>
     </div>
     <script src="js/bootstrap.min.js"></script>
