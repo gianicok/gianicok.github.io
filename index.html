@@ -11,6 +11,7 @@
     <style>
         body {
             /*font-family: Times;*/
+            background-image:white;
             -ms-overflow-style: none;  
             scrollbar-width: none;
         }
@@ -40,30 +41,30 @@
         }
 
         .fa-linkedin {
-            background: black;
-            color: white;
+            background: transparent;
+            color: black;
         }
 
         .fa-github {
-            background: black;
-            color: white;
+            background: transparent;
+            color: black;
         }
 
         .fa-paper-plane {
-            background: black;
-            color: white;
+            background: transparent;
+            color: black;
         }
 
         #about{
-            background-color:black;
-            background-image: url("items/coolgif.gif");
-            background-size:50%;
+            /*background-color:black;*/
+            /*background-image: url("items/coolgif.gif");*/
+            /*background-size:50%;
             background-position: 50% 90%;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat;*/
             position: relative;
+            padding-top:20vh;
             height:100vh;
             width:100%;
-            padding-top:60px;
         }
 
         #linkz{
@@ -85,17 +86,17 @@
         }
 
         #about h1{
-            color:white;
+            color:black;
             padding-top:90px;
             text-align:center;
         }
         #about p{
-            color:white;
+            color:black;
             text-align:center;
         }
         #academics{
             min-height: 100vh;
-            background-image:linear-gradient(black,rgb(77, 76, 76));
+            /*background-image:linear-gradient(black,rgb(77, 76, 76));*/
             width:100%;
             padding-top:60px;
         }
@@ -104,11 +105,12 @@
             width:100%;
         }
         #academics h1{
-            color:white;
+            color:black;
         }
         #academics p{
-            color:white;
+            color:black;
         }
+
         #layoutd{
             background-color: white;
             justify-content: center;
@@ -118,8 +120,11 @@
             overflow:scroll; 
         }
         .list-group li{
-            background-color:rgb(33, 37, 41);
-            color:white;
+            /*background-color:rgb(33, 37, 41);*/
+            background-color:whitesmoke;
+            border:solid;
+            border-width:1px;
+            border-color:lightgray;
         }
         #courses::-webkit-scrollbar{
             display:none;
@@ -130,15 +135,15 @@
             scrollbar-width: none;  /* Firefox */
         }
         #projects{
-            background-image:linear-gradient(rgb(77, 76, 76),gray);
+            /*background-image:linear-gradient(rgb(77, 76, 76),gray);*/
             width:100%;
             padding-top:60px;
         }
         #projcard{
             padding:3px;
             margin:5px;
-            background-color: rgb(33, 37, 41);
-            color:white;
+            background-color: whitesmoke;
+            color:black;
         }
         #projcard img{
             padding:15px;
@@ -150,7 +155,7 @@
         }
 
         #experience{
-            background-image:linear-gradient(gray,white);
+            /*background-image:linear-gradient(gray,white);*/
             height:100vh;
             width:100%;
             padding-top:60px;
@@ -170,7 +175,7 @@
 </head>
 
 <body>
-    <nav id="navhead"class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg"style="background-color:white;">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -178,22 +183,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link" href="#about">
+                <a style="color:black;"class="nav-link" href="#about">
                     About
                 </a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#academics">
+                <a style="color:black;" class="nav-link" href="#academics">
                     Academics
                 </a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#projects">
+                <a style="color:black;" class="nav-link" href="#projects">
                     Projects
                 </a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#experience">
+                <a style="color:black;" class="nav-link" href="#experience">
                     Experience
                 </a>
                 </li>
@@ -201,7 +206,6 @@
             </div>
         </div>
     </nav>
-    <div data-bs-spy="scroll" data-bs-target="#navhead" data-bs-offset=300px class="scrollspy" tabindex="0">
         <div id="about"class="container-fluid">
             <h1>Kosta Gianicos</h1>
             <p>Third Year Engineering Physics Student @ McMaster University</p>
@@ -218,13 +222,13 @@
             <div id="titles">
                 <h1>Academics</h1>
             </div>
-            <p style="font-size: 20px;font-style:italic">Engineering Physics Co-op (B.Eng.)</p>
-            <p>"In Engineering Physics, we create advanced materials, devices and systems based on our 
+            <p style="font-size: 20px;font-style:italic;text-align:center;">Engineering Physics Co-op (B.Eng.)</p>
+            <p style="text-align: center;">"In Engineering Physics, we create advanced materials, devices and systems based on our 
                 fundamental understanding of physics. Our faculty and students are pushing the envelope 
                 of new technologies to solve the grand challenges of the future such as energy supply, 
                 human health, and information and communications technologies." - McMaster University</p>
             <p></p>
-            <p> Engineering Physics means a lot to me. As a first year engineering student I found that 
+            <p style="text-align: center;"> Engineering Physics means a lot to me. As a first year engineering student I found that 
                 I had a wide variety of interests throughout my courses. I liked learning about semiconductors
                 in Materials Science, algorithms in Computer Science, the unintuitive physics in Electricity
                 and Magnetism, and several other areas of first year. Having done a highschool Co-Op in the department 
@@ -249,12 +253,6 @@
                     <div class="col-sm-6">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                              <!--<div class="carousel-item active">
-                                <div id="highlights">
-                                    <h1>Degree Breakdown:</h1>
-                                    <p>How my degree is split up into different fields (by course)</p>
-                                </div>
-                              </div>-->
                               <div class="carousel-item active">
                                 <ul id="courses"class="list-group">
                                     <li class="list-group-item">
