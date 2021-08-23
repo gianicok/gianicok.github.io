@@ -174,10 +174,12 @@
         }
         #projcard{
             padding:3px;
-            margin:5px;
             background-color: whitesmoke;
             color:black;
             min-height: 80vh;
+            border:solid;
+            border-width:1px;
+            border-color:lightgray;
         }
         #projcard img{
             padding:15px;
@@ -191,52 +193,23 @@
         #experience{
             /*background-image:linear-gradient(gray,white);*/
             min-height:100vh;
+            max-height:100vh;
             width:100%;
             padding-top:60px;
         }
-        #resume{
-            min-height:100vh;
-            padding:0;
-        }
-        #experiencestuff{
-            background-color:white
+
+        #expcard{
+            padding:3px;
+            background-color: whitesmoke;
+            color:black;
+            min-height: 80vh;
+            border:solid;
+            border-width:1px;
+            border-color:lightgray;
         }
         #about img{
             width: 100%;
             height: 100%;
-        }
-        #schoolexp{
-            padding:15px;
-            background-color: whitesmoke;
-            border-style:solid;
-            border-width:1px;
-            border-color:lightgray;
-            min-height:60vh;
-        }
-        #schoolexp h1{
-            font-size:23px;
-        }
-        #coopexp{
-            padding:15px;
-            background-color: whitesmoke;
-            border-style:solid;
-            border-width:1px;
-            border-color:lightgray;
-            min-height:60vh;
-        }
-        #coopexp h1{
-            font-size:23px;
-        }
-        #noncareerexp{
-            padding:15px;
-            background-color: whitesmoke;
-            border-style:solid;
-            border-width:1px;
-            border-color:lightgray;
-            min-height:60vh;
-        }
-        #noncareerexp h1{
-            font-size:23px;
         }
     </style>
 </head>
@@ -630,23 +603,33 @@
             </div>
         </div>
         <div id="experience"class="container-fluid">
-            <h1 style="text-align:center;">Experience</h1>
-            <div class="container-fluid">
-                <div class="row">
-                    <div id="schoolexp"class="col-sm-4">
-                        <h1>In McMaster</h1>
-                        <p>The following is a list of clubs/positions I hold at McMaster University.</p>
+            <div id="titles">
+                <h1>Experience</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="expcard" class="card">
+                        <div class="card-body">
+                            <h5 style="font-weight: bold">Volunteering</h5>
+                        </div>
                     </div>
-                    <div id="coopexp"class="col-sm-4">
-                        <h1>Co-Op</h1>
-                        <p>The following is a list of Co-Op positions I have had.</p>
+                </div>
+                <div class="col-md-4">
+                    <div id="expcard" class="card">
+                        <div class="card-body">
+                            <h5 style="font-weight: bold">Co-Op</h5>
+                        </div>
                     </div>
-                    <div id="noncareerexp"class="col-sm-4">
-                        <h1>Unrelated</h1>
-                        <p>The following is a list of positions I have had that are unrelated to my Degree/Career aspirations.</p>
+                </div>
+                <div class="col-md-4">
+                    <div id="expcard" class="card">
+                        <div class="card-body">
+                            <h5 style="font-weight: bold">Extra Curriculars</h5>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
     <script src="js/bootstrap.min.js"></script>
