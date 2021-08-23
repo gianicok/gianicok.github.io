@@ -61,9 +61,8 @@
             /*background-size:50%;
             background-position: 50% 90%;
             background-repeat: no-repeat;*/
-            position: relative;
             padding-top:20vh;
-            height:100vh;
+            min-height:100vh;
             width:100%;
         }
 
@@ -111,6 +110,35 @@
             color:black;
         }
 
+        .container {
+            height:30px;
+            border-style: solid;
+            border-width:1px;
+            border-color:lightgray;
+            width:100%;
+            background-color: whitesmoke;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item {
+            padding:5px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .container button{
+            color:black;
+            height:30px;
+            width:30px;
+            background-color: whitesmoke;
+            border-style:solid;
+            border-width:0.5px;
+            border-color:lightgray;
+        }
+
         #layoutd{
             background-color: white;
             justify-content: center;
@@ -144,6 +172,7 @@
             margin:5px;
             background-color: whitesmoke;
             color:black;
+            min-height: 80vh;
         }
         #projcard img{
             padding:15px;
@@ -156,7 +185,7 @@
 
         #experience{
             /*background-image:linear-gradient(gray,white);*/
-            height:100vh;
+            min-height:100vh;
             width:100%;
             padding-top:60px;
         }
@@ -170,6 +199,39 @@
         #about img{
             width: 100%;
             height: 100%;
+        }
+        #schoolexp{
+            padding:15px;
+            background-color: whitesmoke;
+            border-style:solid;
+            border-width:1px;
+            border-color:lightgray;
+            min-height:60vh;
+        }
+        #schoolexp h1{
+            font-size:23px;
+        }
+        #coopexp{
+            padding:15px;
+            background-color: whitesmoke;
+            border-style:solid;
+            border-width:1px;
+            border-color:lightgray;
+            min-height:60vh;
+        }
+        #coopexp h1{
+            font-size:23px;
+        }
+        #noncareerexp{
+            padding:15px;
+            background-color: whitesmoke;
+            border-style:solid;
+            border-width:1px;
+            border-color:lightgray;
+            min-height:60vh;
+        }
+        #noncareerexp h1{
+            font-size:23px;
         }
     </style>
 </head>
@@ -253,81 +315,95 @@
                     <div class="col-sm-6">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <ul id="courses"class="list-group">
-                                    <li class="list-group-item">
-                                        <h1>Third Year Courses: [2021/22]</h1>
-                                        <strong>
-                                            ENGPHYS 3BA4: "Electronics 1: Circuits with Non-Linear and Active Components"
-                                        </strong>
-                                        <p>	
-                                            P-N junctions, diodes, bipolar junction transistors, field effect transistors, DC and AC modeling, differential amplifiers and operational amplifiers, feedback and oscillators, digital circuits and multivibrators, signal processing.
-                                        </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            ENGPHYS 3F03: "Principles of Solid-state Materials and Devices"
-                                        </strong>
-                                        <p>
-                                            Application of quantum mechanics to the electronic, structural and optical behaviour of solids. Topics will include crystal structures, diffraction, electrical conductivity, band theory, lattice vibrations and semiconductors.
-                                        </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            ENGPHYS 3NM4: "Numerical Methods for Engineering"
-                                        </strong>
-                                        <p>
-                                            Applied numerical methods for engineering including solution of systems of algebraic equations; numerical integration and differentiation; finite difference and finite element methods; ODE solutions; Optimization; Partial differential equations; Monte Carlo simulation.
-                                        </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            ENGPHYS 3L04: "Engineering Metrology: Fundamentals and Applications"
-                                        </strong>
-                                        <p>
-                                            Introductory statistics for engineering, error analysis of experimental data, data visualization and curve fitting, hypothesis testing and making decisions, ANOVA, sensors for pervasive engineering measurements, waves in engineering measurements, noise and interference, instrument response and uncertainty, reliability and safety, introduction to feedback and control, and selected topics in state-of-the-art technologies.
-                                        </p>
-                                    <li class="list-group-item">
-                                    <strong>
-                                        ENGPHYS 3EC4: "Professional Communication and Project Management"
-                                    </strong>
-                                    <p>
-                                        Introduction to communication styles, team dynamics, oral and written presentation skills, effective two-way communication strategies, project management, problem analysis, and job skills
-                                    </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            ENGPHYS 3BB4: "Electronics II: Embedding and Programming a Micro-Controller"
-                                        </strong>
-                                        <p>	
-                                            Design and synthesis project in electronics, focused on integrating analog electronics with a microcontroller to create a PID-controlled device. Programming and interfacing the microcontroller are taught in weeks 1-6; the device is designed and built in weeks 7-12. Prior knowledge of basic electronics, including op-amps and transistors is required.
-                                        </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            ENGPHYS 3PN4: "Semiconductor Junction Devices"
-                                        </strong>
-                                        <p>
-                                            Electronic properties of semiconductors: non-equilibrium carrier conditions; steady state and non-steady state; p-n junctions; Schottky diodes; bipolar junction transistors. Detailed coverage of a range of diodes including photodiodes, solar cells, light emitting diodes, zener diodes, and avalanche diodes.
-                                        </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            ENGPHYS 3SM3: "Statistical Mechanics"
-                                        </strong>
-                                        <p>
-                                            An introduction to statistical distributions and their properties, and the statistical basis of thermodynamics at the microscopic level, with applications to problems originating in a modern laboratory or engineering environment.
-                                        </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            ENGPHYS 3W04: "Signals and Systems for Engineering"
-                                        </strong>
-                                        <p>	
-                                            A systems approach to measurement in which synthesis of topics such as Fourier transforms, signal processing and enhancement, data reduction, modelling and simulation is undertaken.
-                                        </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            ENGPHYS 4QC3: "Introduction to Quantum Cmputing"
-                                        </strong>
-                                        <p>
-                                            An introduction to quantum computing including qubits, entanglement, quantum key cryptography, teleportation, quantum circuits and algorithms, spin qubits.
-                                        </p>
-                                </ul>
-                              </div>
+                                <div class="carousel-item">
+                                    <ul id="courses"class="list-group">
+                                        <li class="list-group-item">
+                                            <h1>First Year Courses: [2019/20]</h1>
+                                            <strong>
+                                                PHYSICS 1E03: "Waves, Electricity, Magnetic Fields"
+                                            </strong>
+                                            <p>	
+                                                A course for engineering students. Oscillations and waves, interference; electrostatics, electric potential, circuit elements; magnetic fields.
+                                            </p>
+                                        <li class="list-group-item">
+                                            <strong>
+                                                CHEM 1E03: "General Chemistry for Engineering 1"
+                                            </strong>
+                                            <p>	
+                                                An introduction to chemical principles for Engineering students, including reactivity, bonding, structure, energetics and electrochemistry.
+                                            </p>
+                                        <li class="list-group-item">
+                                            <strong>
+                                                ECON 1BB3: "Introductory Macroeconomics"
+                                            </strong>
+                                            <p>
+                                                An introduction to the method and theory of macroeconomics, and their application to the analysis of contemporary economic problems.
+                                            </p>
+                                        <li class="list-group-item">
+                                            <strong>
+                                                ENGINEER 1C03: "Engineering Design and Graphics"
+                                            </strong>
+                                            <p>	
+                                                Graphical visualization and communication; technical sketching, 2D and 3D computer-aided design; use of solid modelling software.
+                                            </p>
+                                        <li class="list-group-item">
+                                            <strong>
+                                                MATH 1ZA3: "Engineering Mathematics I"
+                                            </strong>
+                                            <p>
+                                                Functions: limits, continuity, derivatives, optimization, curve sketching. Antiderivative, definite integral, techniques of integration, with applications.
+                                            </p>
+                                        <li class="list-group-item">
+                                            <strong>
+                                                ENGINEER 1P03: "Engineering Profession and Practice"
+                                            </strong>
+                                            <p>	
+                                                Introduction to professional engineering including ethics, health and safety, roles and responsibilities to society, sustainability, engineering communication; design skills; team design projects.
+                                            </p>
+                                        <li class="list-group-item">
+                                            <strong>
+                                                PHYSICS 1D03: "Introductory Mechanics"
+                                            </strong>
+                                            <p>	
+                                                A course for engineering students. Principles of mechanics of particles and rigid bodies, including Newton's Laws, rotational kinematics and dynamics, torque, energy, momentum, angular momentum, and simple harmonic motion.
+                                            </p>
+                                        <li class="list-group-item">
+                                            <strong>
+                                                ECON 1B03: "Engineering course 1234"
+                                            </strong>
+                                            <p>	
+                                                An introduction to the method and theory of microeconomics, and their application to the analysis of contemporary economic problems.
+                                            </p>
+                                        <li class="list-group-item">
+                                            <strong>
+                                                ENGINEER 1D04: "Engineering Computation"
+                                            </strong>
+                                            <p>	
+                                                Development and analysis of simple algorithms. Implementation of algorithms in computer programming language. Design and testing of computer programs.
+                                            </p>
+                                        <li class="list-group-item">
+                                            <strong>
+                                                MATLS 1M03: "Structure and Properties of Materials"
+                                            </strong>
+                                            <p>	
+                                                An introduction to the structure of both crystalline and amorphous solids; the physical and chemical basis for properties exhibited by materials; an overview of material properties including mechanical, electrical, magnetic and thermal behaviour.
+                                            </p>
+                                        <li class="list-group-item">
+                                            <strong>
+                                                MATH 1ZB3: "Engineering Mathematics II (Part 1)"
+                                            </strong>
+                                            <p>
+                                                Techniques of integration, applications of definite integrals, differential equations, polar coordinates, parametrized curves. Sequences, infinite series, power series. Partial derivatives.
+                                            </p>
+                                        <li class="list-group-item">
+                                            <strong>
+                                                MATH 1ZC3: "Engineering Mathematics II (Part 2)"
+                                            </strong>
+                                            <p>	
+                                                Vector spaces given by solutions to linear systems. Linear independence, dimension. Determinants. Eigenvalues, eigenvectors and diagonalisation. Complex numbers.
+                                            </p>
+                                    </ul>
+                                </div>  
                               <div class="carousel-item">
                                 <ul id="courses"class="list-group">
                                     <li class="list-group-item">
@@ -403,104 +479,93 @@
                                         </p>
                                 </ul>
                               </div>
-                              <div class="carousel-item">
+                              <div class="carousel-item active">
                                 <ul id="courses"class="list-group">
                                     <li class="list-group-item">
-                                        <h1>First Year Courses: [2019/20]</h1>
+                                        <h1>Third Year Courses: [2021/22]</h1>
                                         <strong>
-                                            PHYSICS 1E03: "Waves, Electricity, Magnetic Fields"
+                                            ENGPHYS 3BA4: "Electronics 1: Circuits with Non-Linear and Active Components"
                                         </strong>
                                         <p>	
-                                            A course for engineering students. Oscillations and waves, interference; electrostatics, electric potential, circuit elements; magnetic fields.
+                                            P-N junctions, diodes, bipolar junction transistors, field effect transistors, DC and AC modeling, differential amplifiers and operational amplifiers, feedback and oscillators, digital circuits and multivibrators, signal processing.
                                         </p>
                                     <li class="list-group-item">
                                         <strong>
-                                            CHEM 1E03: "General Chemistry for Engineering 1"
-                                        </strong>
-                                        <p>	
-                                            An introduction to chemical principles for Engineering students, including reactivity, bonding, structure, energetics and electrochemistry.
-                                        </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            ECON 1BB3: "Introductory Macroeconomics"
+                                            ENGPHYS 3F03: "Principles of Solid-state Materials and Devices"
                                         </strong>
                                         <p>
-                                            An introduction to the method and theory of macroeconomics, and their application to the analysis of contemporary economic problems.
+                                            Application of quantum mechanics to the electronic, structural and optical behaviour of solids. Topics will include crystal structures, diffraction, electrical conductivity, band theory, lattice vibrations and semiconductors.
                                         </p>
                                     <li class="list-group-item">
                                         <strong>
-                                            ENGINEER 1C03: "Engineering Design and Graphics"
-                                        </strong>
-                                        <p>	
-                                            Graphical visualization and communication; technical sketching, 2D and 3D computer-aided design; use of solid modelling software.
-                                        </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            MATH 1ZA3: "Engineering Mathematics I"
+                                            ENGPHYS 3NM4: "Numerical Methods for Engineering"
                                         </strong>
                                         <p>
-                                            Functions: limits, continuity, derivatives, optimization, curve sketching. Antiderivative, definite integral, techniques of integration, with applications.
+                                            Applied numerical methods for engineering including solution of systems of algebraic equations; numerical integration and differentiation; finite difference and finite element methods; ODE solutions; Optimization; Partial differential equations; Monte Carlo simulation.
                                         </p>
                                     <li class="list-group-item">
                                         <strong>
-                                            ENGINEER 1P03: "Engineering Profession and Practice"
-                                        </strong>
-                                        <p>	
-                                            Introduction to professional engineering including ethics, health and safety, roles and responsibilities to society, sustainability, engineering communication; design skills; team design projects.
-                                        </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            PHYSICS 1D03: "Introductory Mechanics"
-                                        </strong>
-                                        <p>	
-                                            A course for engineering students. Principles of mechanics of particles and rigid bodies, including Newton's Laws, rotational kinematics and dynamics, torque, energy, momentum, angular momentum, and simple harmonic motion.
-                                        </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            ECON 1B03: "Engineering course 1234"
-                                        </strong>
-                                        <p>	
-                                            An introduction to the method and theory of microeconomics, and their application to the analysis of contemporary economic problems.
-                                        </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            ENGINEER 1D04: "Engineering Computation"
-                                        </strong>
-                                        <p>	
-                                            Development and analysis of simple algorithms. Implementation of algorithms in computer programming language. Design and testing of computer programs.
-                                        </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            MATLS 1M03: "Structure and Properties of Materials"
-                                        </strong>
-                                        <p>	
-                                            An introduction to the structure of both crystalline and amorphous solids; the physical and chemical basis for properties exhibited by materials; an overview of material properties including mechanical, electrical, magnetic and thermal behaviour.
-                                        </p>
-                                    <li class="list-group-item">
-                                        <strong>
-                                            MATH 1ZB3: "Engineering Mathematics II (Part 1)"
+                                            ENGPHYS 3L04: "Engineering Metrology: Fundamentals and Applications"
                                         </strong>
                                         <p>
-                                            Techniques of integration, applications of definite integrals, differential equations, polar coordinates, parametrized curves. Sequences, infinite series, power series. Partial derivatives.
+                                            Introductory statistics for engineering, error analysis of experimental data, data visualization and curve fitting, hypothesis testing and making decisions, ANOVA, sensors for pervasive engineering measurements, waves in engineering measurements, noise and interference, instrument response and uncertainty, reliability and safety, introduction to feedback and control, and selected topics in state-of-the-art technologies.
+                                        </p>
+                                    <li class="list-group-item">
+                                    <strong>
+                                        ENGPHYS 3EC4: "Professional Communication and Project Management"
+                                    </strong>
+                                    <p>
+                                        Introduction to communication styles, team dynamics, oral and written presentation skills, effective two-way communication strategies, project management, problem analysis, and job skills
+                                    </p>
+                                    <li class="list-group-item">
+                                        <strong>
+                                            ENGPHYS 3BB4: "Electronics II: Embedding and Programming a Micro-Controller"
+                                        </strong>
+                                        <p>	
+                                            Design and synthesis project in electronics, focused on integrating analog electronics with a microcontroller to create a PID-controlled device. Programming and interfacing the microcontroller are taught in weeks 1-6; the device is designed and built in weeks 7-12. Prior knowledge of basic electronics, including op-amps and transistors is required.
                                         </p>
                                     <li class="list-group-item">
                                         <strong>
-                                            MATH 1ZC3: "Engineering Mathematics II (Part 2)"
+                                            ENGPHYS 3PN4: "Semiconductor Junction Devices"
+                                        </strong>
+                                        <p>
+                                            Electronic properties of semiconductors: non-equilibrium carrier conditions; steady state and non-steady state; p-n junctions; Schottky diodes; bipolar junction transistors. Detailed coverage of a range of diodes including photodiodes, solar cells, light emitting diodes, zener diodes, and avalanche diodes.
+                                        </p>
+                                    <li class="list-group-item">
+                                        <strong>
+                                            ENGPHYS 3SM3: "Statistical Mechanics"
+                                        </strong>
+                                        <p>
+                                            An introduction to statistical distributions and their properties, and the statistical basis of thermodynamics at the microscopic level, with applications to problems originating in a modern laboratory or engineering environment.
+                                        </p>
+                                    <li class="list-group-item">
+                                        <strong>
+                                            ENGPHYS 3W04: "Signals and Systems for Engineering"
                                         </strong>
                                         <p>	
-                                            Vector spaces given by solutions to linear systems. Linear independence, dimension. Determinants. Eigenvalues, eigenvectors and diagonalisation. Complex numbers.
+                                            A systems approach to measurement in which synthesis of topics such as Fourier transforms, signal processing and enhancement, data reduction, modelling and simulation is undertaken.
+                                        </p>
+                                    <li class="list-group-item">
+                                        <strong>
+                                            ENGPHYS 4QC3: "Introduction to Quantum Cmputing"
+                                        </strong>
+                                        <p>
+                                            An introduction to quantum computing including qubits, entanglement, quantum key cryptography, teleportation, quantum circuits and algorithms, spin qubits.
                                         </p>
                                 </ul>
                               </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
+                            <div class="container">
+                                <div class="item">
+                                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">1</button>
+                                </div>
+                                <div class="item">
+                                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2">2</button>
+                                </div>
+                                <div class="item">
+                                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3">3</button>
+                                </div>
+                            </div>
                           </div>
                     </div>
                 </div>
@@ -562,7 +627,23 @@
             </div>
         </div>
         <div id="experience"class="container-fluid">
-            <h1>Experience</h1>
+            <h1 style="text-align:center;">Experience</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="schoolexp"class="col-sm-4">
+                        <h1>In McMaster</h1>
+                        <p>The following is a list of clubs/positions I hold at McMaster University.</p>
+                    </div>
+                    <div id="coopexp"class="col-sm-4">
+                        <h1>Co-Op</h1>
+                        <p>The following is a list of Co-Op positions I have had.</p>
+                    </div>
+                    <div id="noncareerexp"class="col-sm-4">
+                        <h1>Unrelated</h1>
+                        <p>The following is a list of positions I have had that are unrelated to my Degree/Career aspirations.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/bootstrap.min.js"></script>
