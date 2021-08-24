@@ -206,6 +206,7 @@
             border:solid;
             border-width:1px;
             border-color:lightgray;
+            left:0%;
         }
         #about img{
             width: 100%;
@@ -249,7 +250,7 @@
         <div id="about"class="container-fluid">
             <h1 style="color:white;">Kosta Gianicos</h1>
             <p style="color:white;">Third Year Engineering Physics Student @ McMaster University</p>
-            <p style="color:white;">Welcome to my personal site! Here you'll find some info about my past projects, experiences, and my academic goals/interests.</p>
+            <p style="color:white;">Welcome to my personal site! Here you'll find some info about my academic career, projects, and my work experience.</p>
             <div id="linkz">
                 <a href="https://www.linkedin.com/in/kostagianicos/" class="fa fa-linkedin" target="_blank"></a>
                 <a href="https://github.com/gianicok" class="fa fa-github" target="_blank"></a>
@@ -553,6 +554,7 @@
             <div id="titles">
                 <h1>Projects</h1>
             </div>
+            <p style="text-align: center;font-style:italic;">Some projects that I think are cool and show the diversity of my skill set!</p>
             <div class="row">
                 <div class="col-md-4">
                     <div id="projcard" class="card">
@@ -575,7 +577,7 @@
                         <img src="items/photovoltaic.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 style="font-weight: bold">Optimizing energy efficient solar cells
-                                with exterior material heat dissipation.</h5>
+                                with exterior material heat dissipation</h5>
                             <p class="card-text">Using a finite element simulation software (FlexPDE), Python, the laws of Heat Transfer, and some efficiency equations, I optimized the size of a photovoltaic cell in a solar panel to minimize average temperature of the photovoltaic cell and maximize energy output.</p>
                             <h5 style="font-weight: bold">Skills Used:</h5>
                             <p class="skill">- Nanotech/Solar Cells/Thermodynamics</p>
@@ -588,15 +590,15 @@
                 </div>
                 <div class="col-md-4">
                     <div id="projcard" class="card">
-                        <img src="items/rockets.png" class="card-img-top" alt="...">
+                        <img src="items/website.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 style="font-weight: bold">Rocket Design Simulation</h5>
-                            <p class="card-text">Using FlexPDE with Python, I picked the most optimal frontal area that maximizes distance travelled, and kinetic energy.</p>
+                            <h5 style="font-weight: bold">gianicok.github.io</h5>
+                            <p class="card-text">The site you are on now, I chose to make a little personal website using a quite simple web framework. Nothing too complex although I would like to add onto it in the future, possibly a backend to hold blog posts or photo uploads?</p>
                             <h5 style="font-weight: bold">Skills Used:</h5>
-                            <p class="skill">- Report Writing</p>
-                            <p class="skill">- Simulating Physics Through PDE's</p>
-                            <p class="skill">- Data Analysis with Python</p>
-                            <p class="skill">- Fluid Mechanics</p>
+                            <p class="skill">- Git/Github</p>
+                            <p class="skill">- HTML/CSS</p>
+                            <p class="skill">- Bootstrap 5</p>
+                            <p class="skill">- Front-end Design</p>
                         </div>
                     </div>
                 </div>
@@ -606,25 +608,69 @@
             <div id="titles">
                 <h1>Experience</h1>
             </div>
+            <p style="text-align: center;font-style:italic;">For a more professional look at my experience, here is my <a href="items/resume_kosta.pdf" target="blank">CV</a></p>
             <div class="row">
-                <div class="col-md-4">
-                    <div id="expcard" class="card">
-                        <div class="card-body">
-                            <h5 style="font-weight: bold">Volunteering</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <div id="expcard" class="card">
                         <div class="card-body">
                             <h5 style="font-weight: bold">Co-Op</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div id="expcard" class="card">
-                        <div class="card-body">
-                            <h5 style="font-weight: bold">Extra Curriculars</h5>
+                            <p></p>
+                            <p style="font-weight: bold" class="skill"><a href="https://fyelabs.com/">Fyelabs</a>, Research Assistant (12 weeks)</p>
+                            <i>
+                                - Used Python/C++ to implement an OpenCV driven point plotting algorithm that converts real life
+                                (x,y,z) points from a runway to image (u,v) points on an image and vice versa.
+                            </i>
+                            <p></p>
+                            <i>
+                                - Used the Vuetify framework (HTML, JS, CSS, SASS) to create front end views for an internal
+                                dashboard project.
+                            </i>
+                            <p></p>
+                            <i>
+                                - Used HTML and JS with Google Web Serial API to help develop a web platform for the iOLab
+                                wireless lab system. This was a project for a University that allows students to perform at home
+                                physics labs due to COVID-19.
+                            </i>
+                            <p></p>
+                            <i>
+                                - Used Go with an Elastic Search database to build several APIs and back-end services for the
+                                internal dashboard project. Used Swagger.io and Lucid Chart to create documentation and an
+                                entity relationship diagram to make front end to back-end integration easier.
+                            </i>
+                            <p></p>
+                            <p style="font-weight: bold" class="skill">McMaster Engineering Physics, Research Assistant (8 weeks)</p>
+                            <p></p>
+                            <i>- Worked in Dr. Ray LaPierre's research group on the topic of semiconductor nanowires.</i>
+                            <p></p>
+                            <i>- Used image processing (OpenCV) with Python to develop nanowire analyzing softwares.</i>
+                            <p></p>
+                            <i>- Projects determine yield and dimensions of nanowires on silicon wafers.</i>
+                            <p></p>
+                            <i>- Communicated my results in team meetings where I was among graduate level students.</i>
+                            <p></p>
+                            <h5 style="font-weight: bold">Volunteering / University Positions</h5>
+                            <p></p>
+                            <p style="font-weight: bold;">McMaster Physics Department, Teaching Assistant (16 + 16 (to be completed Fall 2021) weeks)</p>
+                            <p>Physics 1D03: Introductory Mechanics</p>
+                            <i>- Responsible for the marking of two lab sections heavily focused on getting students introduced to
+                                calculating uncertainties and creating professional lab reports.
+                            </i>
+                            <p></p>
+                            <p style="font-weight: bold;">McMaster Physics Department, Teaching Assistant (16 weeks)</p>
+                            <p>Physics 1E03, Introduction to Electromagnetism and Waves</p>
+                            <i>- Hold weekly office hours to help students with questions regarding labs.
+                            </i>
+                            <p></p>
+                            <i>- Responsible for the marking of two lab sections with labs based on first yea physics circuit
+                                analysis (KCL, Capacitance, voltage dividers, and more)</i>
+                            <p></p>
+                            <i>- Responsible for marking portions of midterm, and exam.</i>
+                            <p></p>
+                            <p style="font-weight: bold" class="skill">McMaster Society for Engineering Research, Engineering Physics Rep (Part-Time)</p>
+                            <i>- Reach out to professors, help plan events, represent the undergraduate research community at McMaster.</i>
+                            <p></p>
+                            <p style="font-weight: bold" class="skill">St. Demetrios Greek Orthodox Church (4 Years)</p>
+                            <i>- Represent the Greek Community through fundraisers, Traditional Dance events, and more.</i>
                         </div>
                     </div>
                 </div>
@@ -635,3 +681,9 @@
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
+
+
+
